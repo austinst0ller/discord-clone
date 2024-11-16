@@ -54,6 +54,10 @@ export const InitialModal = () => {
     console.log(values)
   }
 
+  if (!isMounted) {
+    return null
+  }
+
   return (
     <Dialog open>
       <DialogContent className='bg-white text-black p-0 overflow-hidden'>
